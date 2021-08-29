@@ -1,8 +1,8 @@
 {
-  "name": "mern-expense-tracker",
-  "version": "2.0.0",
+  "name": "solveqa-expense-tracker",
+  "version": "1.0.0",
   "description": "A MERN stack based expense tracking application",
-  "author": "Shama Hoque",
+  "author": "Oren Schuller Rauch",
   "license": "MIT",
   "keywords": [
     "react",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shamahoque/mern-skeleton.git"
+    "url": "https://github.com/orensrauch/solveqa-expense-tracker.git"
   },
   "homepage": "https://github.com/shamahoque/mern-skeleton",
   "main": "./dist/server.generated.js",

@@ -7,7 +7,7 @@ export default ({markup, css}) => {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           >
-          <title>MERN Expense Tracker</title>
+          <title>SolveQA Expense Tracker</title>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
           <style>
