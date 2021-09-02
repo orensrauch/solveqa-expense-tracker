@@ -44,7 +44,7 @@ export default function Home(){
           { !auth.isAuthenticated() && typeof window !== "undefined" && 
             (<Card className={classes.card}>
               <Typography variant="h6" className={classes.title}>
-                Home Page
+                Home 
               </Typography>
               <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
               {/* <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@anniespratt" target="_blank" rel="noopener noreferrer">Annie Spratt</a> on Unsplash</Typography> */}

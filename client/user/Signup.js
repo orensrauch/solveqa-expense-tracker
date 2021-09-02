@@ -45,6 +45,7 @@ export default function Signup() {
   const classes = useStyles()
   const [values, setValues] = useState({
     name: '',
+    phone: '',
     password: '',
     email: '',
     open: false,
@@ -58,6 +59,7 @@ export default function Signup() {
   const clickSubmit = () => {
     const user = {
       name: values.name || undefined,
+      phone: values.phone || undefined,
       email: values.email || undefined,
       password: values.password || undefined
     }
@@ -76,9 +78,10 @@ export default function Signup() {
           <Typography variant="h6" className={classes.title}>
             Sign Up
           </Typography>
-          <TextField id="name" label="Name" className={classes.textField} value={values.name} onChange={handleChange('name')} margin="normal"/><br/>
+          <TextField id="name" label="Name" className={classes.textField} value={values.name} onChange={handleChange('name')} margin="normal" helperText="Incorrect entry." required/><br/>
+          <TextField id="phone" label="Phone Number" className={classes.textField} value={values.phone} onChange={handleChange('phone')} margin="normal" helperText="Incorrect entry." /><br />
           <TextField id="email" type="email" label="Email" className={classes.textField} value={values.email} onChange={handleChange('email')} margin="normal"/><br/>
-          <TextField id="password" type="password" label="Password" className={classes.textField} value={values.password} onChange={handleChange('password')} margin="normal"/>
+          <TextField id="password" type="password" label="Password" className={classes.textField} value={values.password} onChange={handleChange('password')} margin="normal" required/>
           <br/> {
             values.error && (<Typography component="p" color="error">
               <Icon color="error" className={classes.error}>error</Icon>

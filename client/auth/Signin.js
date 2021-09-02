@@ -41,6 +41,7 @@ export default function Signin(props) {
   const classes = useStyles()
   const [values, setValues] = useState({
       email: '',
+      phone: '',
       password: '',
       error: '',
       redirectToReferrer: false

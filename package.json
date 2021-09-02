@@ -15,7 +15,6 @@
     "type": "git",
     "url": "https://github.com/orensrauch/solveqa-expense-tracker.git"
   },
-  "homepage": "https://github.com/shamahoque/mern-skeleton",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
@@ -50,6 +49,7 @@
     "cookie-parser": "1.4.5",
     "cors": "2.8.5",
     "date-fns": "2.11.1",
+    "dotenv": "^10.0.0",
     "express": "4.17.1",
     "express-jwt": "5.3.1",
     "helmet": "3.22.0",

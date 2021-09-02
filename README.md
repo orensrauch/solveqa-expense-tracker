@@ -1,12 +1,12 @@
-# MERN Expense Tracker
+# SolveQA Expense Tracker
 
 An expense tracking application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
-![MERN Expense Tracker](https://mernbook.s3.amazonaws.com/git+/expensetracker.png "MERN Expense Tracker")
+![SolveQA Expense Tracker](https://mernbook.s3.amazonaws.com/git+/expensetracker.png "SolveQA Expense Tracker")
 
-![MERN Expense Tracker Graphs](https://mernbook.s3.amazonaws.com/git+/graphs.png "MERN Expense Tracker Graphs")
+![SolveQA Expense Tracker Graphs](https://mernbook.s3.amazonaws.com/git+/graphs.png "SolveQA Expense Tracker Graphs")
 
-### [Live Demo](http://expensetracker.mernbook.com/ "MERN Expense Tracker")
+### [Live Demo](http://expensetracker.mernbook.com/ "SolveQA Expense Tracker")
 
 #### What you need to run this code
 1. Node (13.12.0)

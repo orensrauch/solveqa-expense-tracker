@@ -10,12 +10,12 @@ const signin = async (req, res) => {
     })
     if (!user)
       return res.status('401').json({
-        error: "User not found"
+        error: "Sorry, User not found"
       })
 
     if (!user.authenticate(req.body.password)) {
       return res.status('401').send({
-        error: "Email and password don't match."
+        error: "Email or password don't match."
       })
     }
 
@@ -32,6 +32,7 @@ const signin = async (req, res) => {
       user: {
         _id: user._id,
         name: user.name,
+        phone: user.phone,
         email: user.email
       }
     })
