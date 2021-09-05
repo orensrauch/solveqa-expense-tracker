@@ -1,8 +1,14 @@
 # SolveQA Expense Tracker - Full testing project
 
-An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
-Project is followed by the STP and all test docs included in the doc folder to download.
+* An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
+* Project is followed by the STP and all test docs included in the doc folder to download.
+
+![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif?raw=true)
+
+* Includes Cypress integration testing
+
+![]()
 
 # Testing Documents
 ![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg?raw=true)
