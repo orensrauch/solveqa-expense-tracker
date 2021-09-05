@@ -5,7 +5,7 @@ Project is followed by the STP and all test docs included in the doc folder to d
 
 ![SolveQA Expense Tracker](https://mernbook.s3.amazonaws.com/git+/expensetracker.png "SolveQA Expense Tracker")
 
-![SolveQA Expense Tracker Documents structure](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/Documents%20Diagram.jpeg"SolveQA Expense Tracker Documents structure")
+![SolveQA Expense Tracker Documents structure](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/Documents%20Diagram.jpeg?raw=true"SolveQA Expense Tracker Documents structure")
 
 ### [Live Demo](http://expensetracker.mernbook.com/ "SolveQA Expense Tracker")
 
