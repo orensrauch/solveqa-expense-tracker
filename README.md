@@ -3,9 +3,8 @@
 An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 Project is followed by the STP and all test docs included in the doc folder to download.
 
-![SolveQA Expense Tracker](https://mernbook.s3.amazonaws.com/git+/expensetracker.png "SolveQA Expense Tracker")
 
-![SolveQA Expense Tracker Documents structure](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/Documents%20Diagram.jpeg?raw=true"SolveQA Expense Tracker Documents structure")
+![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/Documents%20Diagram.jpeg?raw=true)
 
 ### [Live Demo](http://expensetracker.mernbook.com/ "SolveQA Expense Tracker")
 
