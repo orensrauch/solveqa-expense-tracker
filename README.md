@@ -1,14 +1,15 @@
-# SolveQA Expense Tracker
+# SolveQA Expense Tracker - Full testing project
 
-An expense tracking application with data visualization - developed using React, Node, Express, MongoDB and Victory.
+An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
+Project is followed by the STP and all test docs included in the doc folder to download.
 
 ![SolveQA Expense Tracker](https://mernbook.s3.amazonaws.com/git+/expensetracker.png "SolveQA Expense Tracker")
 
-![SolveQA Expense Tracker Graphs](https://mernbook.s3.amazonaws.com/git+/graphs.png "SolveQA Expense Tracker Graphs")
+![SolveQA Expense Tracker Documents structure](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/Documents%20Diagram.jpeg"SolveQA Expense Tracker Documents structure")
 
 ### [Live Demo](http://expensetracker.mernbook.com/ "SolveQA Expense Tracker")
 
-#### What you need to run this code
+#### What you need to run this project locally
 1. Node (13.12.0)
 2. NPM (6.14.4) or Yarn (1.22.4)
 3. MongoDB (4.2.0)

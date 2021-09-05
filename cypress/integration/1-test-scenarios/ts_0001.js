@@ -46,7 +46,7 @@ describe("TC_SU_003 Validate proper notification messages are displayed on form 
 })//End of TC_SU_003
 
 //TC_SU_004
-describe("TC_SU_004 Validate Sign-Up an Account by providing all the fields", () => {
+describe("TC_SU_004 Validate Sign Up an Account by providing the existing account details (i.e. existing email address)", () => {
 
     it("Should be able to submit a successfull submission via Sign Up form", () => {
         cy.visit("http://localhost:3000/signup");
