@@ -8,7 +8,7 @@
 
 * Includes Cypress integration testing
 
-![]()
+![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif?raw=true)
 
 # Testing Documents
 ![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg?raw=true)
