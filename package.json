@@ -30,6 +30,7 @@
     "@babel/preset-env": "7.9.0",
     "@babel/preset-react": "7.9.4",
     "babel-loader": "8.1.0",
+    "cypress": "^8.3.1",
     "file-loader": "6.0.0",
     "nodemon": "2.0.2",
     "webpack": "4.42.1",
