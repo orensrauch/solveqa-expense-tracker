@@ -1,18 +1,16 @@
 # SolveQA Expense Tracker - Full testing project
-s
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif" alt="expensetrack" width="800"/>
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
 * Project is tested following this [`Software Test Plan`](https://github.com/orensrauch/solveqa-expense-tracker/raw/main/doc/Expense-Tracker-Test-Plan.docx) and all test documents are included in the `doc` folder included in this repo for download.
 
-![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif?raw=true)
-
 # Automation Testing
 
 * `Cypress` Integration testing following the [`Test Cases`](https://github.com/orensrauch/solveqa-expense-tracker/tree/main/doc) Document file provided in the `doc` folder.
+* Inorder to launch `Cypress` test, in bash terminal `npm run cypress`
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif" alt="cypress" width="800"/>
 
-Inorder to launch `Cypress` test, in bash terminal `npm run cypress`
 
-![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif=100x100)
 
 * `Jest` Unit testing for functional testing
 
