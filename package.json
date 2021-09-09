@@ -19,7 +19,8 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "start": "NODE_ENV=production node ./dist/server.generated.js"
+    "start": "NODE_ENV=production node ./dist/server.generated.js",
+    "cypress": "./node_modules/.bin/cypress open"
   },
   "engines": {
     "node": "13.12.0",
