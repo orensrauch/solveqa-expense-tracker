@@ -1,17 +1,29 @@
 # SolveQA Expense Tracker - Full testing project
+s
+### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
-* An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
-
-* Project is followed by the STP and all test docs included in the doc folder to download.
+* Project is tested following this [`Software Test Plan`](https://github.com/orensrauch/solveqa-expense-tracker/raw/main/doc/Expense-Tracker-Test-Plan.docx) and all test documents are included in the `doc` folder included in this repo for download.
 
 ![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif?raw=true)
 
-* Includes Cypress integration testing
+# Automation Testing
 
-![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif?raw=true)
+* `Cypress` Integration testing following the [`Test Cases`](https://github.com/orensrauch/solveqa-expense-tracker/tree/main/doc) Document file provided in the `doc` folder.
+
+Inorder to launch `Cypress` test, in bash terminal `npm run cypress`
+
+![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif=100x100)
+
+* `Jest` Unit testing for functional testing
+
+* `K6` for Load and Stress testing
 
 # Testing Documents
+*
+This MERN project is for educational purposes only to demonstrate software testing coverage.
+in this repo, you can find all related test plan documents which handle test project documentation traceability as shown in this doc flow
 ![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg?raw=true)
+
 
 
 #### What you need to run this project locally
