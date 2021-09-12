@@ -26,10 +26,10 @@ const useStyles = makeStyles(theme => ({
   credit: {
     padding: 10,
     textAlign: 'right',
-    backgroundColor: '#ededed',
+    backgroundColor: '#c6463b',
     borderBottom: '1px solid #d0d0d0',
     '& a':{
-      color: '#4f83cc'
+      color: '#c6463b'
     } 
   }
 }))
