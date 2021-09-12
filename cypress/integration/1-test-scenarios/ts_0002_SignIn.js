@@ -13,7 +13,7 @@ describe("TC_SI_001 Validate Sign-In an Account by providing only the Mandatory 
         cy.get('#email').type("useralpha@gmail.com");
         cy.get('#password').type("12345678");
         cy.get('.MuiCardActions-root > .MuiButtonBase-root > .MuiButton-label').click();
-        cy.wait(1000)
+        cy.wait(1000);
     })
     it("User should be able to see SIGN OUT button element on top right header", () => {
         cy.get('.MuiButton-colorInherit > .MuiButton-label').should('include.text', 'Sign out');
@@ -21,7 +21,7 @@ describe("TC_SI_001 Validate Sign-In an Account by providing only the Mandatory 
 })//End of TC_SI_001
 
 //######################################################################################################################### */
-
+//
 //TC_SI_002
 describe("TC_SI_002 Validate Sign-In an Account by providing only the Mandatory fields with existing account", () => {
 
