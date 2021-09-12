@@ -24,7 +24,7 @@ in this repo, you can find all related test plan documents which handle test pro
 
 <img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg" alt="software testing documents diagram flow" width="300"/>
 
-#### What you need to run this project locally
+# What you need to run this project locally
 1. Node (13.12.0)
 2. NPM (6.14.4) or Yarn (1.22.4)
 3. MongoDB (4.2.0)
@@ -37,8 +37,8 @@ in this repo, you can find all related test plan documents which handle test pro
    - To run the application for development, run ```  npm run development  ``` or ``` yarn development ```
 4. Open [localhost:3000](http://localhost:3000/) in the browser
 
-#### How to run test scripts
-#### * Test with Cypress
+# How to run test scripts
+## * Test with Cypress
 1. Make sure to run project `npm run development`
 2. create New Terminal and split to two terminals (git bash) 
 now you should work as `terminal 1` is running the project and `terminal 2`(new one) will run the test
