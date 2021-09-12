@@ -1,16 +1,17 @@
 # SolveQA Expense Tracker - Full testing project
-s
+
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
 * Project is tested following this [`Software Test Plan`](https://github.com/orensrauch/solveqa-expense-tracker/raw/main/doc/Expense-Tracker-Test-Plan.docx) and all test documents are included in the `doc` folder included in this repo for download.
 
-![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif?raw=true)
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif" alt="software testing" width="500"/>
 
 # Automation Testing
 
 * `Cypress` Integration testing following the [`Test Cases`](https://github.com/orensrauch/solveqa-expense-tracker/tree/main/doc) Document file provided in the `doc` folder.
 
-![](https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif=100x100)
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif" alt="software testing cypress" width="500"/>
+------
 
 * `Jest` Unit testing for functional testing
 
@@ -21,7 +22,7 @@ s
 This project is for educational purposes only to demonstrate software testing lifecycle.
 in this repo, you can find all related test plan documents which handle test project documentation traceability as shown in this documents diagram flow
 
-<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg" alt="software testing documents diagram flow" width="500"/>
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg" alt="software testing documents diagram flow" width="300"/>
 
 #### What you need to run this project locally
 1. Node (13.12.0)
