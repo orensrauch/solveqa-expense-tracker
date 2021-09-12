@@ -3,14 +3,16 @@
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
 * Project is tested following this [`Software Test Plan`](https://github.com/orensrauch/solveqa-expense-tracker/raw/main/doc/Expense-Tracker-Test-Plan.docx) and all test documents are included in the `doc` folder included in this repo for download.
-
-<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif" alt="software testing" width="500"/>
+<div align="center">
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/ExpenseTracker1.gif" alt="software testing" width="100%"/>
+</div>
 
 # Automation Testing
 
 * `Cypress` Integration testing following the [`Test Cases`](https://github.com/orensrauch/solveqa-expense-tracker/tree/main/doc) Document file provided in the `doc` folder.
-
-<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif" alt="software testing cypress" width="500"/>
+<div align="center">
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/solveqa-cypress-demo.gif" alt="software testing cypress" width="100%"/>
+</div>
 ------
 
 * `Jest` Unit testing for functional testing
