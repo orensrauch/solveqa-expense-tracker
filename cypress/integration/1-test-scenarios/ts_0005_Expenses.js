@@ -18,7 +18,7 @@ describe("TC_EP_001 validate query selector functionality ", () => {
     it("navigate to ADD EXPENSE page", () => {
         cy.log("in home page, click on ADD EXPENSE navbar button");
         cy.get('[href="/signup"] > .MuiButtonBase-root > .MuiButton-label').click();
-        cy.url().should('eq', 'http://localhost:3000/expenses/new')
+        cy.url().should('eq', 'http://localhost:3000/expenses/new');
     })
     it("User should be signed and to be able to successfully submit new expense", () => {
         cy.get('#title').type("New Laptop");
@@ -68,6 +68,7 @@ describe("TC_EP_001 validate query selector functionality ", () => {
             //make sure the element contains text content
             expect($p).to.contain("New Laptop")
         });
+        cy.log('confirmed display of expense in a specific date');
     })
 })//End of TC_EP_001
 
