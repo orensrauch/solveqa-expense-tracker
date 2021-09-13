@@ -1,5 +1,9 @@
 # SolveQA Expense Tracker - Full testing project
 
+<div align="center">
+<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/expense-tracker.jpg" alt="software testing" width="100%"/>
+</div>
+
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
 * Project is tested following this [`Software Test Plan`](https://github.com/orensrauch/solveqa-expense-tracker/raw/main/doc/Expense-Tracker-Test-Plan.docx) and all test documents are included in the `doc` folder included in this repo for download.
