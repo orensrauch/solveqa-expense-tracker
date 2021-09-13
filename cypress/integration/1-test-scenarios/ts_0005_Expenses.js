@@ -12,14 +12,23 @@ describe("TC_EP_001 validate query selector functionality ", () => {
     it("successfully submit account details and sign in", () => {
         cy.get('#email').type("useralpha@gmail.com");
         cy.get('#password').type("12345678");
-        cy.get('.MuiCardActions-root > .MuiButtonBase-root > .MuiButton-label').click().wait(1000);
+        cy.get('.MuiCardActions-root > .MuiButtonBase-root > .MuiButton-label').click();
         
     })
     it("navigate to ADD EXPENSE page", () => {
         cy.log("in home page, click on ADD EXPENSE navbar button");
-        cy.get('[href="/signup"] > .MuiButtonBase-root > .MuiButton-label').click();
-        cy.url().should('eq', 'http://localhost:3000/expenses/new');
+        // cy.get('[href="/expenses/new"] > .MuiButtonBase-root').click();
+        cy.get('span .MuiButton-label  .MuiSvgIcon-root').click();
+        // cy.get('#Add Expense').click();
+        // cy.url().should('eq', 'http://localhost:3000/expenses/new');
     })
+    // it("successfully submit account details and sign in", () => {
+    //     cy.get('#email').type("useralpha@gmail.com");
+    //     cy.get('#password').type("12345678");
+    //     cy.get('.MuiCardActions-root > .MuiButtonBase-root > .MuiButton-label').click();
+        
+    // })
+
     it("User should be signed and to be able to successfully submit new expense", () => {
         cy.get('#title').type("New Laptop");
         cy.get('#amount').type("1000");
@@ -33,7 +42,7 @@ describe("TC_EP_001 validate query selector functionality ", () => {
         cy.log('after selecting year 2020');
         cy.get('.MuiPickersMonthSelection-container > :nth-child(8)').click();
         cy.log('after selecting Aug month');
-        cy.get(':nth-child(3) > :nth-child(2) > .MuiButtonBase-root > .MuiIconButton-label > .MuiTypography-root');
+        cy.get(':nth-child(3) > :nth-child(2) > .MuiButtonBase-root > .MuiIconButton-label > .MuiTypography-root').click();
         cy.log('after selecting 10th of the month');
         cy.get('.MuiDialogActions-root > :nth-child(3) > .MuiButton-label').click();
         cy.log('after click on OK button to confirm expense date');
@@ -48,7 +57,8 @@ describe("TC_EP_001 validate query selector functionality ", () => {
     })
     it("Should execute query to specific date and see the expense", () => {
         cy.log('Before click on the FROM date pick');
-        cy.get(':nth-child(1) > .MuiInputBase-root > .MuiInputBase-input').click();
+        cy.get('.makeStyles-search-48 > :nth-child(1)').click();
+        // cy.get('.makeStyles-search-48 > :nth-child(1) > .MuiInputBase-root > .MuiInputBase-input')
         cy.log('After FROM date pick was clicked');
         cy.get(':nth-child(1) > .MuiButton-label > .MuiTypography-root').click();
         cy.log('After YEAR was clicked');
@@ -60,7 +70,7 @@ describe("TC_EP_001 validate query selector functionality ", () => {
         cy.log('after selecting 10th of the month');
         cy.get('.MuiDialogActions-root > :nth-child(2) > .MuiButton-label').click();
         cy.log('after click on OK button to confirm expense date');
-        cy.get('.makeStyles-search-27 > .MuiButtonBase-root').click();
+        cy.get('.makeStyles-search-48 > .MuiButtonBase-root').click();
         cy.log('after click on GO button to execute query');
     })
     it("Confirm display of expense", () => {
