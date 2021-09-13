@@ -60,7 +60,7 @@ describe("TC_EP_001 validate query selector functionality ", () => {
         cy.log('after selecting 10th of the month');
         cy.get('.MuiDialogActions-root > :nth-child(2) > .MuiButton-label').click();
         cy.log('after click on OK button to confirm expense date');
-        cy.get('.makeStyles-search-48 > .MuiButtonBase-root').click();
+        cy.get('.makeStyles-search-27 > .MuiButtonBase-root').click();
         cy.log('after click on GO button to execute query');
     })
     it("Confirm display of expense", () => {
