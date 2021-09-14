@@ -51,3 +51,10 @@ now you should work as `terminal 1` is running the project and `terminal 2`(new 
 3. In `terminal 2` execute `npm run cy:open` to run cypress tests in GUI mode
 4. In `terminal 2` execute `npm run cy:run` to run cypress tests in headless mode
 ----
+
+## * Test with k6
+1. Make sure you ['installed k6 on yor machine'](https://k6.io/docs/getting-started/installation/)
+2. check k6 is installed by run `k6 verstion` in terminal
+3. run `k6 run load.js` in terminal
+
+
