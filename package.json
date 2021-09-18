@@ -21,8 +21,8 @@
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
     "start": "NODE_ENV=production node ./dist/server.generated.js",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "init-test": "npm run development https://localhost:3000 cy:run"
+    "cy:run": "cypress run"
+ 
   },
   "engines": {
     "node": "13.12.0",
