@@ -22,7 +22,6 @@
     "start": "NODE_ENV=production node ./dist/server.generated.js",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
- 
   },
   "engines": {
     "node": "13.12.0",
@@ -60,6 +59,7 @@
     "jsonwebtoken": "8.5.1",
     "lodash": "^4.17.21",
     "mongoose": "5.9.7",
+    "prettier": "^2.4.1",
     "query-string": "6.11.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
