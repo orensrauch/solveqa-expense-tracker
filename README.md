@@ -1,8 +1,5 @@
 # SolveQA Expense Tracker - Full testing project
 
-<div align="center">
-<img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/client/assets/githubAssets/expense-tracker.jpg" alt="software testing" width="100%"/>
-</div>
 
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
@@ -19,16 +16,19 @@
 </div>
 ------
 
-* `Jest` Unit testing for functional testing
-
 * `K6` for Load and Stress testing
 
 # Testing Documents
 
-This project is for educational purposes only to demonstrate software testing lifecycle.
+This project is for educational purposes to demonstrate software testing lifecycle.
 in this repo, you can find all related test plan documents which handle test project documentation traceability as shown in this documents diagram flow
 
 <img src="https://github.com/orensrauch/solveqa-expense-tracker/blob/main/doc/DocumentsDiagram.jpeg" alt="software testing documents diagram flow" width="300"/>
+
+[`Download Test Plan`](https://drive.google.com/file/d/14Fzj0VrXbgpPYjotRNEGUsnHubJeANoJ/view?usp=sharing)
+[`Download Test Cases document`](https://docs.google.com/spreadsheets/d/1xFUjl8ssVujLCmM4ah8t1E3IXM8gYMsO/edit?usp=sharing&ouid=110070234660526095621&rtpof=true&sd=true)
+[`Download Test Scenarios document`](https://docs.google.com/spreadsheets/d/115Y9p9aYiJnMFk8pna8UcMwPCS4oVMNr/edit?usp=sharing&ouid=110070234660526095621&rtpof=true&sd=true)
+
 
 # What you need to run this project locally
 1. Node (13.12.0)
