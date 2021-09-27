@@ -35,12 +35,21 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
-      - name: "Install application"
-        run: npm install
+  #     - name: "Install application"
+  #       run: npm install
 
-      - name: "Start the Application Server"
-        run: npm run development  
-  # mongo:
+  #     - name: "Start the Application Server"
+  #       run: npm run development  
+
+  #     - name: "Deploy an Instance of MongoDB as a container"
+  #       run: docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest  
+      
+  #     - name: "Show Docker Images"
+  #       run: docker images
+
+  #     - name: "Show Docker Network"
+  #       run: docker ps
+  # e2e:
   #   runs-on: ubuntu-latest
   #   steps:
   #     - name: "Check out Git repository"
@@ -49,33 +58,16 @@ jobs:
   #       uses: actions/setup-node@v1
   #       with:
   #         node-version: 14
-      - name: "Deploy an Instance of MongoDB as a container"
-        run: docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest  
-      
-      - name: "Show Docker Images"
-        run: docker images
-
-      - name: "Show Docker Network"
-        run: docker ps
-  e2e:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Check out Git repository"
-        uses: actions/checkout@v2
-      - name: "Use Node.js 14"
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14
-      - name: "Install application"
-        run: npm install
-      - name: "Execute end-to-end tests"
-        uses: nick-invision/retry@v2
-        continue-on-error: true
-        with:
-          timeout_minutes: 20
-          max_attempts: 4
-          command: |
-            npm run cy:run
+  #     - name: "Install application"
+  #       run: npm install
+  #     - name: "Execute end-to-end tests"
+  #       uses: nick-invision/retry@v2
+  #       continue-on-error: true
+  #       with:
+  #         timeout_minutes: 20
+  #         max_attempts: 4
+  #         command: |
+  #           npm run cy:run
   docker-push:
     runs-on: ubuntu-latest
     steps:
