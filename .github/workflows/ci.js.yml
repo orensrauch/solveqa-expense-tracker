@@ -54,7 +54,7 @@ jobs:
         run: npm run development  
 
      - name: "Integration Test"
-        run: npm run cy:run 
+       run: npm run cy:run 
 
       - name: Build and Push Docker Images
         uses: mr-smithers-excellent/docker-build-push@v4
