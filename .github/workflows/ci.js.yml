@@ -35,17 +35,6 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - name: MongoDB in GitHub Actions
-        # You may pin to the exact commit or the version.
-        # uses: supercharge/mongodb-github-action@a16e87bbc3edc38021742a5f958831c905fe9f67
-        uses: supercharge/mongodb-github-action@1.6.0
-        with:
-        # MongoDB version to use (default "latest")
-          mongodb-version: # optional, default is latest
-        # MongoDB replica set name (no replica set by default)
-        mongodb-replica-set: # optional, default is 
-        # MongoDB port to use (default 27017)
-        mongodb-port: # optional, default is 27017    
 
       - name: "Install application"
         run: npm install
