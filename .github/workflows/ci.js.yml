@@ -38,9 +38,6 @@ jobs:
       - name: "Install application"
         run: npm install
 
-      - name: "Deploy an Instance of MongoDB as a container"
-        run: docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest  
-
       - name: "Start the Application Server"
         run: npm run development  
 
@@ -68,6 +65,19 @@ jobs:
           max_attempts: 4
           command: |
             npm run cy:run
+  mongodb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out Git repository"
+        uses: actions/checkout@v2
+      - name: "Use Node.js 14"
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          
+      - name: "Deploy an Instance of MongoDB as a container"
+        run: docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest  
+
   # docker-push:
   #   runs-on: ubuntu-latest
   #   steps:
