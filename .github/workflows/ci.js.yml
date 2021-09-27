@@ -19,7 +19,8 @@ jobs:
 
 
     steps:
-    
+    variables:
+    DOCKER_HOST: 'tcp://docker:2375'
       - name: "Check out Git repository"
         uses: actions/checkout@v2
       - name: "Use Node.js ${{ matrix.node-version }}"
@@ -49,6 +50,8 @@ jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
+    variables:
+    DOCKER_HOST: 'tcp://docker:2375'
       - name: "Check out Git repository"
         uses: actions/checkout@v2
       - name: "Use Node.js 14"
@@ -74,23 +77,22 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-          
+
       - name: "Deploy an Instance of MongoDB as a container"
         run: docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest  
-
-  # docker-push:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: "Check out Git repository"
-  #       uses: actions/checkout@v2
-  #     - name: "Use Node.js 14"
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: 14
-  #     - name: Build and Push Docker Images
-  #       uses: mr-smithers-excellent/docker-build-push@v4
-  #       with:
-  #         image: oren1337/e2e-expensetrack
-  #         registry: docker.io
-  #         username: ${{ secrets.DOCKER_USERNAME }}
-  #         password: ${{ secrets.DOCKER_PASSWORD }}  
+  docker-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out Git repository"
+        uses: actions/checkout@v2
+      - name: "Use Node.js 14"
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Build and Push Docker Images
+        uses: mr-smithers-excellent/docker-build-push@v4
+        with:
+          image: oren1337/e2e-expensetrack
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}  
