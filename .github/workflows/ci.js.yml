@@ -25,6 +25,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+     
+      - name: "Cache Node.js modules"
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+
       - name: MongoDB in GitHub Actions
         # You may pin to the exact commit or the version.
         # uses: supercharge/mongodb-github-action@a16e87bbc3edc38021742a5f958831c905fe9f67
@@ -36,14 +46,7 @@ jobs:
         mongodb-replica-set: # optional, default is 
         # MongoDB port to use (default 27017)
         mongodb-port: # optional, default is 27017    
-      - name: "Cache Node.js modules"
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.OS }}-node-${{ hashFiles('**/package.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-node-
-            ${{ runner.OS }}-
+
       - name: "Install application"
         run: npm install
 
