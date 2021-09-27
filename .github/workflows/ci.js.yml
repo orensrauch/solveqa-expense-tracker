@@ -52,7 +52,7 @@ jobs:
 
       - name: "Build the application"
         run: npm run development  
-e2e:
+  e2e:
     runs-on: ubuntu-latest
     steps:
       - name: "Check out Git repository"
