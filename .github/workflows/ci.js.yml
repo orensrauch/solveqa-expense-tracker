@@ -74,11 +74,19 @@ jobs:
           command: |
             set NODE_ENV=test
             npm run cy:run
-  docker-push:
-      - name: Build and Push Docker Images
-        uses: mr-smithers-excellent/docker-build-push@v4
-        with:
-          image: oren1337/e2e-expensetrack
-          registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}  
+  # docker-push:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: "Check out Git repository"
+  #       uses: actions/checkout@v2
+  #     - name: "Use Node.js 14"
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: 14
+  #     - name: Build and Push Docker Images
+  #       uses: mr-smithers-excellent/docker-build-push@v4
+  #       with:
+  #         image: oren1337/e2e-expensetrack
+  #         registry: docker.io
+  #         username: ${{ secrets.DOCKER_USERNAME }}
+  #         password: ${{ secrets.DOCKER_PASSWORD }}  
