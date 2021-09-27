@@ -28,6 +28,10 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
       - name: "Install CLI tools"
         run: npm install -g @react/cli
       - name: "Install application"
