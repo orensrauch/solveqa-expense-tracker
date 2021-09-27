@@ -35,16 +35,10 @@ jobs:
             ${{ runner.OS }}-
       - name: "Install application"
         run: npm install
+
       - name: "Build the application"
-        RUN: npm run build  
-      # - name: "Run App server"
-      #   uses: npm run development  
-      # - name: "Execute integration tests"
-      #   uses: nick-invision/retry@v2
-      #   with:
-      #     timeout_minutes: 10
-      #     max_attempts: 2
-      #     command: npm run cy:run
+        run: npm run build  
+
       - name: Build and Push Docker Images
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
