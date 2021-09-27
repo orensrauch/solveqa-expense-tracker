@@ -50,7 +50,7 @@ jobs:
       - name: "Install application"
         run: npm install
 
-      - name: "Build the application"
+      - name: "Start the Application Server"
         run: npm run development  
   e2e:
     runs-on: ubuntu-latest
@@ -70,11 +70,11 @@ jobs:
         continue-on-error: true
         with:
           timeout_minutes: 20
-          max_attempts: 2
+          max_attempts: 4
           command: |
             set NODE_ENV=test
             npm run cy:run
-
+  docker-push:
       - name: Build and Push Docker Images
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
