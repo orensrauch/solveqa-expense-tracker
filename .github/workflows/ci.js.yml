@@ -35,19 +35,26 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - name: "Pull mongo"
-        run: docker pull mongo:4.2.2
+      # - name: "Pull mongo"
+      #   run: docker pull mongo:4.2.2
 
       - name: "Deploy an Instance of MongoDB as a container"
         run: docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest  
       
       - name: "Show Docker Images"
         run: docker images
-      # - name: "Install application"
-      #   run: npm install
 
-      # - name: "Build the application"
-      #   run: npm run build  
+      - name: "Show Docker Images"
+        run: docker ps
+
+      - name: "Install application"
+        run: npm install
+
+      - name: "Build the application"
+        run: npm run development  
+
+     - name: "Integration Test"
+        run: npm run cy:run 
 
       - name: Build and Push Docker Images
         uses: mr-smithers-excellent/docker-build-push@v4
