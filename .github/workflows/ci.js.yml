@@ -52,9 +52,28 @@ jobs:
 
       - name: "Build the application"
         run: npm run development  
-
-      - name: "Integration Test"
-        run: npm run cy:run 
+e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out Git repository"
+        uses: actions/checkout@v2
+      - name: "Use Node.js 14"
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      # - name: "Install CLI tools"
+      #   run: npm install -g @angular/cli
+      - name: "Install application"
+        run: npm install
+      - name: "Execute end-to-end tests"
+        uses: nick-invision/retry@v2
+        continue-on-error: true
+        with:
+          timeout_minutes: 20
+          max_attempts: 2
+          command: |
+            set NODE_ENV=test
+            npm run cy:run
 
       - name: Build and Push Docker Images
         uses: mr-smithers-excellent/docker-build-push@v4
