@@ -39,7 +39,8 @@ jobs:
         run: docker pull mongo:4.2.2
 
       - name: "Deploy an Instance of MongoDB as a container"
-        run: docker run -d -p 2717:27017 -v ~/merndb:/data/db --name merndb mongo:latest  
+        run: docker run -d -p 2717:27017 -v ~/merndb:/data/db --name mernproject mongo:latest  
+        
       # - name: "Install application"
       #   run: npm install
 
