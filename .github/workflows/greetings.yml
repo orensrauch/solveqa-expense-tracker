@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Oh, A new Issue? no issue(: we thank you for finding and hope we can solve this quickly.'
+        pr-message: 'Espense Track Welcomes you on this pull request, we hope you would enjoy this repo.'
