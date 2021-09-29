@@ -1,5 +1,6 @@
 # SolveQA Expense Tracker - Full testing project
 
+[![CI/CD Pipeline](https://github.com/orensrauch/solveqa-expense-tracker/actions/workflows/ci.js.yml/badge.svg?branch=main)](https://github.com/orensrauch/solveqa-expense-tracker/actions/workflows/ci.js.yml)
 
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
@@ -39,13 +40,13 @@ in this repo, you can find all related test plan documents which handle test pro
 1. Make sure MongoDB is running on your system
 2. Clone this repository
 3. Open command line in the cloned folder,
-   - To install dependencies, run ```  npm install  ``` or ``` yarn ```
-   - To run the application for development, run ```  npm run development  ``` or ``` yarn development ```
+   - To install dependencies, run ```  npm install  ``` 
+   - To run the application, run ```  npm run start  ``` 
 4. Open [localhost:3000](http://localhost:3000/) in the browser
 
 # How to run test scripts
 ## * Test with Cypress
-1. Make sure to run project `npm run development`
+1. Make sure to run project `npm run start`
 2. create New Terminal and split to two terminals (git bash) 
 now you should work as `terminal 1` is running the project and `terminal 2`(new one) will run the test
 3. In `terminal 2` execute `npm run cy:open` to run cypress tests in GUI mode

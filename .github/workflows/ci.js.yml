@@ -50,6 +50,7 @@ jobs:
       - name: "Slack workflow notification"
         uses: Gamesight/slack-workflow-status@master
         with:
-          icon_url: https://avatars.githubusercontent.com/u/69259809?v=4
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          name: 'SolveQA Bot'
+          icon_url: 'https://avatars.githubusercontent.com/u/69259809?v=4'
