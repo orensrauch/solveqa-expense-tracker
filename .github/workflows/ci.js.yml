@@ -56,7 +56,7 @@ jobs:
       - name: "Check out Git repository"
         uses: actions/checkout@v2
       - name: Build the docker-compose stack
-        run: docker-compose -f docker-compose.yml up -d
+        run: docker-compose up
   # mongodb:
   #   runs-on: ubuntu-latest
   #   steps:
