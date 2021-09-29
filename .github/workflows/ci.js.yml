@@ -32,6 +32,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/simplewhale:latest     
+         
       # - name: "Use Node.js ${{ matrix.node-version }}"
       #   uses: actions/setup-node@v1
       #   with:
@@ -49,25 +50,13 @@ jobs:
       # - name: "Start the Application e2e test"
       #   run: npm run ci 
 
-  # e2e:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: "Check out Git repository"
-  #       uses: actions/checkout@v2
-  #     - name: "Use Node.js 14"
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: 14
-  #     - name: "Install application"
-  #       run: npm install
-  #     - name: "Execute end-to-end tests"
-  #       uses: nick-invision/retry@v2
-  #       continue-on-error: true
-  #       with:
-  #         timeout_minutes: 20
-  #         max_attempts: 4
-  #         command: |
-  #           npm run cy:run
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out Git repository"
+        uses: actions/checkout@v2
+      - name: Build the docker-compose stack
+        run: docker-compose -f docker-compose.yml up -d
   # mongodb:
   #   runs-on: ubuntu-latest
   #   steps:
@@ -95,3 +84,4 @@ jobs:
   #         registry: docker.io
   #         username: ${{ secrets.DOCKER_USERNAME }}
   #         password: ${{ secrets.DOCKER_PASSWORD }}  
+
