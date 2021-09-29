@@ -13,6 +13,6 @@ COPY . .
 # # Exports
 # EXPOSE 3000 
 # Build the App
-# RUN npm run build 
+RUN npm run build 
 # Star App in production
 CMD ["npm","run","ci"]

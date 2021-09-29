@@ -31,7 +31,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/simplewhale:latest     
+          tags: ${{ secrets.DOCKER_USERNAME }}/expense-track:latest     
          
   docker-test:
     runs-on: ubuntu-latest
@@ -44,7 +44,7 @@ jobs:
   notify-slack:
     if: github.event_name == 'push' && (success() || failure())
     needs:
-      - docker-test
+      - build
     runs-on: ubuntu-latest
     steps:
       - name: "Slack workflow notification"
