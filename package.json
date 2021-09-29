@@ -23,7 +23,7 @@
 		"cy:open": "cypress open",
 		"cy:run": "cypress run",
 		"start-server": "npm run start",
-		"ci": "start-server-and-test start-server http-get://localhost:3000 cy:run"
+		"ci": "start-server-and-test start-server http://localhost:3000 cy:run"
 	},
 	"engines": {
 		"node": "13.12.0",

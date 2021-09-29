@@ -50,13 +50,13 @@ jobs:
       # - name: "Start the Application e2e test"
       #   run: npm run ci 
 
-  e2e:
+  docker-test:
     runs-on: ubuntu-latest
     steps:
       - name: "Check out Git repository"
         uses: actions/checkout@v2
-      - name: Build the docker-compose stack
-        run: docker-compose up
+      - name: "Execute smoke test on Docker"
+        run: docker-compose -f docker-compose.test.yml up --exit-code-from sut
   # mongodb:
   #   runs-on: ubuntu-latest
   #   steps:
