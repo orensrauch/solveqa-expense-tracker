@@ -33,13 +33,13 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/expense-track:latest     
          
-  docker-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Check out Git repository"
-        uses: actions/checkout@v2
-      - name: "Execute smoke test on Docker"
-        run: docker-compose up
+  # docker-test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: "Check out Git repository"
+  #       uses: actions/checkout@v2
+  #     - name: "Execute smoke test on Docker"
+  #       run: docker-compose up
 
   notify-slack:
     if: github.event_name == 'push' && (success() || failure())
@@ -50,5 +50,6 @@ jobs:
       - name: "Slack workflow notification"
         uses: Gamesight/slack-workflow-status@master
         with:
+          icon_url: https://avatars.githubusercontent.com/u/69259809?v=4
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
