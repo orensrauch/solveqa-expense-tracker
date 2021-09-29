@@ -56,7 +56,7 @@ jobs:
       - name: "Check out Git repository"
         uses: actions/checkout@v2
       - name: "Execute smoke test on Docker"
-        run: docker-compose -f docker-compose.yml up --exit-code-from sut
+        run: docker-compose -f docker-compose.yml up
   # mongodb:
   #   runs-on: ubuntu-latest
   #   steps:
