@@ -17,7 +17,7 @@ describe("TC_AE_001 Validate user submit new expense", () => {
     })
     it("navigate to ADD EXPENSE page", () => {
         cy.log("in home page, click on ADD EXPENSE navbar button");
-        cy.get('[href="/signup"] > .MuiButtonBase-root > .MuiButton-label').click();
+        cy.get('button').contains(' Add Expense').click();
         cy.url().should('eq', 'http://localhost:3000/expenses/new')
     })
     it("User should be able to successfully submit new expense", () => {
@@ -31,7 +31,8 @@ describe("TC_AE_001 Validate user submit new expense", () => {
     it("User should be redirected to home page", () => {
         cy.url().should('eq', 'http://localhost:3000/')
     })
-})//End of TC_AE_001
+  })
+//End of TC_AE_001
 
 //######################################################################################################################### */
 

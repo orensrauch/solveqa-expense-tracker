@@ -1,0 +1,62 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myapp
+    container_name: myapp
+    volumes:
+      - ./:/usr/src/app
+      # - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    # env_file: .env
+    environment:
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongo:27017/mernproject
+      # - NODE_ENV=development
+    networks:
+      - app-network
+  mongo:
+    image: mongo
+    container_name: mongodb-container
+    volumes:
+      - data-volume:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+  # cypress:
+  #   image: "cypress/included:3.2.0"
+  #   depends_on:
+  #     - server
+  #     - mongo
+  #   environment:
+  #     - PORT=3000
+  #     - CYPRESS_baseUrl=http://localhost:3000
+      
+  #   depends_on:
+  #     - server
+  
+  #   networks:
+  #     - app-network
+  #   working_dir: /e2e
+  #   volumes:
+  #     - ./:/e2e
+  #     - ./:/usr/src/app
+networks:
+    app-network:
+        driver: bridge
+
+volumes:
+    data-volume:
+
+    node_modules:
+
+    web-root:
+    
+      driver: local

@@ -16,4 +16,4 @@ cache:
 install:
     - npm install    
 script:
-    - npm run ci   
+    - npm ci   

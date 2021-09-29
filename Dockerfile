@@ -1,9 +1,26 @@
-FROM cypress/base:12
-RUN mkdir /app
-WORKDIR /app
-COPY . /app
+
+FROM cypress/browsers:node14.17.0-chrome91-ff89
+
+# Create App Directory
+RUN mkdir /my-cypress-project
+
+WORKDIR /my-cypress-project
+
+# Install Dependencies
+COPY ./package.json .
+COPY ./cypress.json .
+COPY ./cypress ./cypress
+
 RUN npm install
-RUN docker run -d -p 27017-27019:27017-27019 -v ~/merndb:/data/db --name mernproject mongo:latest
-RUN npm run development
-RUN $(npm bin)/cypress verify
-RUN ["npm", "run", "cy:run"]
+
+# # Copy app source code
+COPY . .
+
+# # Exports
+# EXPOSE 3000 
+
+# Build the App
+# RUN npm run build 
+
+# Star App in production
+CMD ["npm","run","ci"]
