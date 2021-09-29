@@ -1,0 +1,19 @@
+language: node_js
+
+node_js: 
+  - "lts/*"
+addons:
+  chrome: stable
+  apt:
+    packages:
+    - libgconf-2-4
+cache:
+  npm: true
+  directories:
+    - ~/.npm
+    - ./node_moduls
+    - ~/.cache
+install:
+    - npm install    
+script:
+    - npm run ci   
