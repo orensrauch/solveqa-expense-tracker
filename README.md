@@ -1,6 +1,17 @@
 # SolveQA Expense Tracker - Full testing project
 
 [![CI/CD Pipeline](https://github.com/orensrauch/solveqa-expense-tracker/actions/workflows/ci.js.yml/badge.svg?branch=main)](https://github.com/orensrauch/solveqa-expense-tracker/actions/workflows/ci.js.yml)
+------------
+
+**Table of Contents**
+
+<!-- - [About](#An-expense-tracking-MERN-application-with-data-visualization---developed-using-React,-Node,-Express,-MongoDB-and-Victory.) -->
+- [Automation Testing](#Automation-Testing)
+- [Testing Documents](#Testing-Documents)
+- [run this project locally](#What-you-need-to-run-this-project-locally)
+- [How to run test scripts](#How-to-run-test-scripts)
+
+------------
 
 ### An expense tracking MERN application with data visualization - developed using React, Node, Express, MongoDB and Victory.
 
