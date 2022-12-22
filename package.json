@@ -61,7 +61,7 @@
 		"express-jwt": "5.3.1",
 		"forever": "^4.0.1",
 		"helmet": "3.22.0",
-		"jsonwebtoken": "8.5.1",
+		"jsonwebtoken": "9.0.0",
 		"lodash": "^4.17.21",
 		"mongoose": "5.9.7",
 		"prettier": "^2.4.1",
